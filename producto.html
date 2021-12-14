@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Store </title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+            <a href="index.html">
+                <img class="header__logo" src="img/logo.png" alt="logotipo">
+            </a>
+    </header>
+
+    <nav class="navegacion">
+    <a class="navegacion__enlace" href="index.html">Tienda</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto">
+
+            <div class="camisa__contenido">
+                <p>
+                    Nullam scelerisque, ligula eget volutpat tincidunt, lectus mi hendrerit sem, ac sollicitudin diam justo in orci. Phasellus ultricies felis ut mauris viverra laoreet. Duis at nulla vitae orci commodo iaculis in eu lacus. 
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected >--Seleccionar Talle--</option> <!-- le doy el atributo disable para que no se seleccione y selected para que aparezca en seleccion pero despues desaparezca -->
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" >
+                        <input class="formulario__submit" type="submit" value="Agregar al Carrito" >
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front end Store - Todos los derechos reservados 2022.</p>
+    </footer>
+</body>
+</html>
